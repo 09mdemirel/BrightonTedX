@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TEDX in Brighton</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+      <h1>Anatomy of a Frog</h1>
+      <div id="navbar">
+          <a href="HomePage.html"><div class="option">Home</div></a>
+          <a href="About%20Us.html"><div class="option">About</div></a>
+          <a href="Contact_Form.html"><div class="option">Contact</div></a>
+          <div class="option"><a href="#">Talks</a>
+              <div class="dropdown">
+                  <a href="Blogs.html">Talks</a>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <div id="content">
+        <hr>
+        <video id="Video" controls autoplay>
+            <source src="Content/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <hr>
+        <h3>Timings:</h3>
+        <ul>
+            <li><p onclick="setCurTime(5)" type="button">Introduction</p></li>
+            <li><p onclick="setCurTime(15)" type="button">Main Part</p></li>
+            <li><p onclick="setCurTime(50)" type="button">End</p></li>
+        </ul>
+    </div>
+</body>
+
+
+
+</html>

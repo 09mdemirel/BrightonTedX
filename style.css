@@ -21,6 +21,7 @@ a:hover {
 }
 
 header {
+    padding: 0;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
     background-color: #275070;
     color: #EBAAB0;
     background-size: cover;
-    padding: 1em 0em 1em;
+    padding: 1em 0 1em;
     margin: 0;
     width: 100%;
 }
@@ -43,17 +44,9 @@ h1 {
     vertical-align: middle;
 }
 
-.option {
-
-    color: #F3E1C0;
-    display: inline-block;
-    padding: 1em;
-    position: relative;
-}
-
 #content {
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
@@ -156,3 +149,106 @@ h1 {
     margin: 0;
   }
 
+#slice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: 0;
+    overflow: auto;
+}
+
+#sliceChild {
+    width: 200px;
+    height: 230px;
+    margin-right: 100px;
+    /*background-color: white;*/
+    text-align: left;
+}
+
+#sliceChild p{
+    margin: 0 5% 0 0;
+    font-size: small;
+    text-align: justify;
+}
+
+#sliceChild h3{
+    margin: 0 5% 0 0;
+}
+
+#sliceChild img{
+    height: 112.5px;
+    width: 200px;
+    margin-top: 0;
+}
+
+hr{
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.option {
+    color: #F3E1C0;
+    display:inline-block;
+    padding: 1em;
+    position:relative;
+    transition: background-color 0.5s ease-out;
+}
+.option a {
+    color: #F3E1C0;
+    text-decoration: none;
+}
+.option:hover {
+    background-color: black;
+}
+.dropdown{
+    display:none;
+    position:absolute;
+    width:100%;
+    left:0;
+    margin-top:1em;
+}
+.dropdown a{
+    z-index: 1;
+    width:100%;
+    height:50%;
+    padding:0.5em 0 0.5em 0;
+    text-align:center;
+    background-color: #b0a990;
+    left:0;
+    display:block;
+    text-decoration:none;
+}
+.dropdown a:hover{
+    color: #dcdfe2;
+    transition: color 0.3s ease-out;
+}
+
+@keyframes testanimation {
+    0% {opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.option:hover .dropdown{
+    display: block;
+    color: #3c4d00;
+    animation: testanimation 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+#Video{
+    background-color: white;
+    width: 100%;
+}
