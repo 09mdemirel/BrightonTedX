@@ -1,15 +1,24 @@
+html, body { margin: 0; padding: 0; }
+
 body {
     /*colours:
     F3E1C0 PEACH
     EBAAB0 HOT PINK
     275070 MIDNIGHT BLUE
     955670 MAROON*/
+
+
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: black;
-    background-color: #D4F1F4;
+    background-color: #F3E1C0;
+    background: linear-gradient(45deg, #EBAAB0, #F3E1C0);
     line-height: 1.5;
   }
+
+div{
+    height: 100%;
+}
 
 a{
     text-decoration: none;
@@ -22,6 +31,12 @@ a:hover {
 
 header {
     padding: 0;
+
+}
+
+body header{
+    background-color: white;
+    width: 100%;
 }
 
 h1 {
@@ -29,8 +44,8 @@ h1 {
     text-align: center;
     background-color: #275070;
     color: #EBAAB0;
-    background-size: cover;
-    padding: 1em 0 1em;
+    /*background-size: cover;*/
+    padding: 1em 0em 1em 0em;
     margin: 0;
     width: 100%;
 }
@@ -51,39 +66,39 @@ h1 {
 }
 
 
-  .contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: #275070;
-  }
+  /*.contact-form label {*/
+  /*  display: block;*/
+  /*  margin-bottom: 0.5rem;*/
+  /*  font-size: 1.2rem;*/
+  /*  color: #275070;*/
+  /*}*/
 
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-  }
+  /*.contact-form input[type="text"],*/
+  /*.contact-form input[type="email"],*/
+  /*.contact-form textarea {*/
+  /*  width: 100%;*/
+  /*  padding: 0.5rem;*/
+  /*  border: none;*/
+  /*  border-bottom: 2px solid #ccc;*/
+  /*  margin-bottom: 1rem;*/
+  /*  font-size: 1.2rem;*/
+  /*}*/
 
-  .contact-form textarea {
-    resize: vertical;
-  }
+  /*.contact-form textarea {*/
+  /*  resize: vertical;*/
+  /*}*/
 
-  .contact-form button {
-    padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
+  /*.contact-form button {*/
+  /*  padding: 0.5rem 1rem;*/
+  /*  background-color: #333;*/
+  /*  color: #fff;*/
+  /*  border: none;*/
+  /*  cursor: pointer;*/
+  /*}*/
 
-  .contact-form button:hover {
-    background-color: #555;
-  }
+  /*.contact-form button:hover {*/
+  /*  background-color: #555;*/
+  /*}*/
 
 
 #slice {
@@ -193,4 +208,12 @@ hr{
 #Video{
     background-color: white;
     width: 100%;
+}
+
+#blog a{
+    color: darkblue;
+}
+
+#blog li{
+    float: right;
 }
