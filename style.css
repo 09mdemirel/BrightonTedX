@@ -8,16 +8,19 @@ body {
     955670 MAROON*/
 
 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-family: "Charter", "Didot", "Futura", sans-serif;
+    font-size: 17px;
     color: black;
-    background-color: #F3E1C0;
-    background: linear-gradient(45deg, #EBAAB0, #F3E1C0);
+    /*background-color: #F3E1C0;*/
+    /*background: linear-gradient(45deg, #EBAAB0, #F3E1C0);*/
     line-height: 1.5;
   }
 
 div{
     height: 100%;
+}
+header h1{
+    font-family: Georgia;
 }
 
 a{
@@ -25,13 +28,8 @@ a{
     color: #333;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 header {
     padding: 0;
-
 }
 
 body header{
@@ -40,20 +38,22 @@ body header{
 }
 
 h1 {
+    font-family: "Big Caslon";
     font-size: xxx-large;
     text-align: center;
-    background-color: #275070;
-    color: #EBAAB0;
+    /*background-color: #275070;*/
+    /*color: #EBAAB0;*/
     /*background-size: cover;*/
-    padding: 1em 0em 1em 0em;
+    padding: 1em 0em 0.5em 0em;
     margin: 0;
     width: 100%;
 }
 
+
 #navbar {
-    background-color: #955670;
+    /*background-color: #955670;*/
     display: table-cell;
-    text-align: left;
+    text-align: center;
     height: 2em;
     width: 100vw;
     vertical-align: middle;
@@ -66,39 +66,39 @@ h1 {
 }
 
 
-  /*.contact-form label {*/
-  /*  display: block;*/
-  /*  margin-bottom: 0.5rem;*/
-  /*  font-size: 1.2rem;*/
-  /*  color: #275070;*/
-  /*}*/
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #275070;
+  }
 
-  /*.contact-form input[type="text"],*/
-  /*.contact-form input[type="email"],*/
-  /*.contact-form textarea {*/
-  /*  width: 100%;*/
-  /*  padding: 0.5rem;*/
-  /*  border: none;*/
-  /*  border-bottom: 2px solid #ccc;*/
-  /*  margin-bottom: 1rem;*/
-  /*  font-size: 1.2rem;*/
-  /*}*/
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
 
-  /*.contact-form textarea {*/
-  /*  resize: vertical;*/
-  /*}*/
+  .contact-form textarea {
+    resize: vertical;
+  }
 
-  /*.contact-form button {*/
-  /*  padding: 0.5rem 1rem;*/
-  /*  background-color: #333;*/
-  /*  color: #fff;*/
-  /*  border: none;*/
-  /*  cursor: pointer;*/
-  /*}*/
+  .contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
 
-  /*.contact-form button:hover {*/
-  /*  background-color: #555;*/
-  /*}*/
+  .contact-form button:hover {
+    background-color: #555;
+  }
 
 
 #slice {
@@ -111,10 +111,14 @@ h1 {
     overflow: auto;
 }
 
+#slice::-webkit-scrollbar {
+  display: none;
+}
+
 #sliceChild {
     width: 200px;
     height: 230px;
-    margin-right: 100px;
+    margin-right: 60px;
     background-color: white;
     text-align: left;
 }
@@ -154,23 +158,24 @@ hr{
 }
 
 .option {
-    color: #F3E1C0;
+    color: lightslategray;
     display:inline-block;
     padding: 1em;
     position:relative;
-    transition: background-color 0.5s ease-out;
+    transition: color 0.5s ease-out;
 }
 .option a {
-    color: #F3E1C0;
+    color: lightslategray;
     text-decoration: none;
+    /*background-color: black;*/
 }
 .option:hover {
-    background-color: #9c6a7f;
+    color: black;
 }
 .dropdown{
     display:none;
     position:absolute;
-    width:100%;
+    width:90px;
     left:0;
     margin-top:1em;
 }
@@ -180,17 +185,20 @@ hr{
     height:50%;
     padding:0.5em 0 0.5em 0;
     text-align:center;
-    background-color: #80425c;
     left:0;
     display:block;
     text-decoration:none;
+    background-color: black;
 }
 .dropdown a:hover{
-    color: #dcdfe2;
+    color: black;
+    background-color: white;
     transition: color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+
 }
 
-@keyframes testanimation {
+@keyframes testanimation{
     0% {opacity: 0;
     }
     100% {
@@ -214,6 +222,37 @@ hr{
     color: darkblue;
 }
 
-#blog li{
-    float: right;
+#welcome{
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+#welcome h1{
+    padding:1em 0 0.5em 0;
+    font-family: "Didot", "Optima";
+}
+#welcome p{
+    text-align: center;
+    padding:0 10% 50px 10%;
+}
+
+#smallLine{
+    margin: 0 20% 5px 20%;
+}
+
+#threeWide{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    background-color: black;
+}
+
+#oneThird{
+    width: 20%;
+    background-color: pink;
+    width: 200px;
+    height: 230px;
+    margin-right: 60px;
+    text-align: left;
 }
