@@ -184,8 +184,11 @@ hr{
 .dropdown a{
     z-index: 1;
     width:200%;
-    height:50%;
-    padding:0.5em 0 0.5em 0;
+    height:1em;
+    padding-top: 0.5em;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1em;
     text-align:center;
     left:0;
     display:block;
@@ -193,10 +196,10 @@ hr{
     background-color: black;
 }
 .dropdown a:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    /*background-color: white;*/
     transition: color 0.3s ease-out;
-    transition: background-color 0.3s ease-out;
+    /*transition: background-color 0.3s ease-out;*/
 
 }
 
