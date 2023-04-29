@@ -5,22 +5,18 @@ body {
     F3E1C0 PEACH
     EBAAB0 HOT PINK
     275070 MIDNIGHT BLUE
+    FFEEE0 light beige
     955670 MAROON*/
 
 
-    font-family: "Charter", "Didot", "Futura", sans-serif;
+    font-family: "Cormorant Garamond", Didot, serif; /* Main small text*/
     font-size: 17px;
     color: black;
-    /*background-color: #F3E1C0;*/
-    /*background: linear-gradient(45deg, #EBAAB0, #F3E1C0);*/
     line-height: 1.5;
   }
 
 div{
     height: 100%;
-}
-header h1{
-    font-family: Georgia;
 }
 
 a{
@@ -28,27 +24,36 @@ a{
     color: #333;
 }
 
+h1 {
+    font-size: xxx-large;
+    text-align: center;
+    /*background-color: #275070;*/
+    /*color: #EBAAB0;*/
+    /*background-size: cover;*/
+    padding: 1em 0 0.5em 0;
+    margin: 0;
+    width: 100%;
+}
+h2 {
+
+}
+
+h3 {
+    font-family: "Comic Sans MS", serif; /* small header*/
+}
+
 header {
     padding: 0;
+}
+
+header h1{
+    font-family: "Georgia", serif; /* title at the very top of page*/
 }
 
 body header{
     background-color: white;
     width: 100%;
 }
-
-h1 {
-    font-family: "Big Caslon";
-    font-size: xxx-large;
-    text-align: center;
-    /*background-color: #275070;*/
-    /*color: #EBAAB0;*/
-    /*background-size: cover;*/
-    padding: 1em 0em 0.5em 0em;
-    margin: 0;
-    width: 100%;
-}
-
 
 #navbar {
     /*background-color: #955670;*/
@@ -151,10 +156,7 @@ h1 {
 
 
 hr{
-    margin-top: 10px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .option {
@@ -223,13 +225,14 @@ hr{
 }
 
 #welcome{
-    background-color: antiquewhite;
+    background-color: #FFEEE0;
     background-size: cover;
 }
 
 #welcome h1{
     padding:1em 0 0.5em 0;
-    font-family: "Didot", "Optima";
+    font-family: "Cormorant Garamond Light", "Didot", serif; /* Welcome title */
+
 }
 #welcome p{
     text-align: center;
@@ -249,7 +252,6 @@ hr{
 }
 
 #oneThird{
-    width: 20%;
     background-color: pink;
     width: 200px;
     height: 230px;
