@@ -9,7 +9,7 @@ body {
     955670 MAROON*/
 
 
-    font-family: "Cormorant Garamond", Didot, serif; /* Main small text*/
+    font-family: "Raleway", Didot, serif; /* Main small text*/
     font-size: 17px;
     color: black;
     line-height: 1.5;
@@ -231,7 +231,7 @@ hr{
 
 #welcome h1{
     padding:1em 0 0.5em 0;
-    font-family: "Cormorant Garamond Light", "Didot", serif; /* Welcome title */
+    font-family: "Cormorant Garamond", "Didot", serif; /* Welcome title */
 
 }
 #welcome p{
